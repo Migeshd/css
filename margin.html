@@ -1,0 +1,40 @@
+<!-- if we have to bring two boxes side by side then we have to make a container class and in the style we have to use flex as we make demo style -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .demo
+    {
+        height: 200px;
+        width: 300px;
+        background-color: aquamarine;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    /* margin left and right garna lai chai side ma arko box cha bhane matra kam garcha else it will take whole space */
+    /* we have margin in which margin: 1px 2px 3px 4px are the all value given which means top right bottom and left
+    similarly when margin:1px 2px 3 px are given then it means top left&right and bottom
+    similarly when margin:1px 2px only two values are given the it means topbottom and leftright
+    when margin:1px is given it means all side are of 1px
+    margin:auto it means 0px center */
+    .demo2
+    {
+        height: 200px;
+        width: 300px;
+        background-color: red;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    </style>
+</head>
+<body>
+    <!-- margin-top, margin-right, margin-bottom, margin-left -->
+    <!-- padding means space between two border elements -->
+    <div class="demo"></div>
+    <div class="demo2"></div>
+</body>
+</html>
