@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo1{
+            height: 100px;
+            background-color: red;
+            width: 200px;
+            position: relative;
+            top: 30px;
+            z-index: 1;
+        }
+        .demo2{
+            height: 100px;
+            background-color: blue;
+            width: 200px;
+            position: relative;
+            bottom: 10px;
+            /* visibility: hidden; */
+            /* hidden garda chai space chai lincha but box wont see */
+            /* display: none; */
+            /* yo garda chai thau pani gayabh huncha visibility ni gayabh huncha  */
+            z-index: -1;
+        }
+        .demo3{
+            height: 100px;
+            background-color: green;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- z-index always work when position is given -->
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+</body>
+</html>

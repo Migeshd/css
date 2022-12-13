@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .demo{
+            height: 200px;
+            width: 24%;
+            background-color: blueviolet;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width:992px) {
+            .container{
+                background-color: green;
+            }
+            .demo{
+                background-color: aliceblue;
+            }
+        }
+        /* 0 dekhin 992px samman chalnu paryo ra yedi 992 bhandha besi gayo bhane tabha extra wala ma background color diff denu paryo bhabya ho */
+        @media screen and (max-width:700px) {
+            .container{
+                background-color: pink;
+            }
+            .demo{
+                width: 49%;
+            }
+        }
+        @media screen and (max-width:400px) {
+            .container{
+                background-color: red;
+            }
+            .demo{
+                width: 99%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+    </div>
+</body>
+</html>

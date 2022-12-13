@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 800px;
+            border: 1px solid red;
+            display: grid;
+            grid-gap: 10px;
+            /* yesle chai harek box ma mathi side sabh tira 10px ko gap dencha  */
+            grid-template-rows: 100px 200px 400px 100px;
+            grid-template-columns: repeat(3,1fr)200px;
+            /* yesare (3,1fr)200px bhanyo bhanechai 200px lekhda karan 4 ota huncha cause space lincha */
+            /* repeat(3,300px) ; */
+            /* yesare repeat halney ko meaning chai 3 ota column 300 px ko bhanne ho ,, yeslai hamile repeat nalekhi 300px 300px 300px bhanera lekhda ni huncha  */
+        }
+        .demo1{
+            background-color: red;
+            grid-column: 1/5;
+            /* yesle chai 1 ta row le 5 ota nai column merge garney  */
+        }
+        .demo2{
+            background-color: aqua;
+        }
+        .demo3{
+            background-color: yellow;
+        }
+        .demo4{
+            background-color: green;
+        }
+        .demo5{
+            background-color: pink;
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+        .demo6{
+            background-color: brown;
+            grid-column: 1/4;
+        }
+        .demo7{
+            background-color: purple;
+            grid-column: 1/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="demo1">header</div>
+        <div class="demo2">box1</div>
+        <div class="demo3">box2</div>
+        <div class="demo4">box3</div>
+        <div class="demo5">sidebar</div>
+        <div class="demo6">main-content</div>
+        <div class="demo7">footer</div>
+
+    </div>
+</body>
+</html>

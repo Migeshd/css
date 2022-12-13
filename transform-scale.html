@@ -1,0 +1,37 @@
+<!-- image zoom in zoom out garney kaam garcha when we take our mouse in the image  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+            border: 1px solid aquamarine;
+            margin: auto;
+            /* margin auto le center ma lyaune kam garcha  */
+            overflow: hidden;
+            /* yo overflow le chai container bhitra matra rakhne kam garcha, img zoom hudha box bata aaudhaina abha  */
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            transition: all 3s;
+            /* transition le chai slowly zoom garera dekhaune kam garcha ani 3s means 3sec ho  */
+        }
+        .container:hover img{
+            transform: scale(1.5);
+            /* transform ko value bhita minus ma value halyo bhane full flip huncha  */
+        }
+        /* from above .container.hover img we can increase the image size by 1.5 when we place the mouse on that image  */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1669833526714-0bfa8a3b5cae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="loading  error">
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            height: 500px;
+            width: 600px;
+            background-color: aqua;
+            position: relative;
+        }
+        .demo1{
+            height: 500px;
+            width: 600px;
+            background-color: red;
+            /* top: 10px;
+            left: 10px; */
+            position: absolute;
+            display: none;
+            /* display none garyo bhane chai pachade ko box completely haraucha  */
+        }
+        .demo:hover .demo1{
+            display: block;
+        }
+        /* yo wala hover garyo bhane chai pachade ko block visible huncha tara tyo garna lai hamile display none bhanera garnu parcha */
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <div class="demo1"></div>
+    </div>
+</body>
+</html>
+<!-- hamile top left right bottom chai jabha euta box bhitra arko box rakhcham ani tespachi tyo bhitra ko box lai move garnu paryo bhane use huncha  -->

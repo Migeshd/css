@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            height: 400px;
+            width: 400px;
+            background-color: brown;
+            position: relative;
+            /* postion relative lekheko bhayera yo parent ho bhanera chinincha ra demo1 tesko bhitra bascha  */
+            /* if we didnt write relative then the demo1 box will be out in the screen means out of the box */
+            
+        }
+        .demo1
+        {
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            left: 50%;
+            right: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <div class="demo1">
+<!-- we can see demo is parent and demo1 is child,, and in absolute we can see that parent is overlapped by child -->
+<!-- child doesnot go out of parent -->
+
+        </div>
+    </div>
+</body>
+</html>

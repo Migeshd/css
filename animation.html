@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            animation-name: animation3 ;
+            animation-duration: 4s;
+            position: relative;
+            /* animation-direction: alternate-reverse; */
+            /* animation-delay: 3s; */
+            /* yesko meaning chai 3s pachi chalnu paryo bhanya ho  */
+            animation-iteration-count: infinite;
+            /* yo bhanya chai 3 choti samman animation chalne bhanne ho tya infinite lekhyo bhane chaleko chalei huncha  */
+        }
+        @keyframes animation1 {
+            from{
+                background-color: blue;
+            }
+            to{
+                background-color: aqua;
+                margin: 50px;
+            }
+        }
+        @keyframes animation2{
+0%   {background-color:red; left:0px; top:0px;}
+25%  {background-color:yellow; left:200px; top:0px;}
+50%  {background-color:blue; left:200px; top:200px;}
+75%  {background-color:green; left:0px; top:200px;}
+100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes animation3{
+    0%   {background-color:red; left:0px; top:0px;}
+25%  {background-color:yellow; left:200px; top:0px;}
+70%  {background-color:blue; left:100px; top:200px;}
+100% {background-color:red; left:0px; top:0px;}
+}
+    </style>
+</head>
+<body>
+    <div class="demo">
+
+    </div>
+</body>
+</html>
